@@ -3,8 +3,8 @@ import React, { Component } from 'react';
 import {
   BrowserRouter as Router,
   Route,
-  Switch,
-  Redirect
+  Routes,
+  Navigate
 } from 'react-router-dom';
 
 class App extends Component {
@@ -17,13 +17,13 @@ class App extends Component {
 
           <Header />
 
-          <Switch>
+          <Routes>
 
 
 
-            <Redirect to="/" />
+            < Navigate to="/" />
 
-          </Switch>
+          </Routes>
         </Router>
       </>
     );
