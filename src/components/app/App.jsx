@@ -1,11 +1,15 @@
 
 import React, { Component } from 'react';
+import Header from '../app/containers/Header';
 import {
   BrowserRouter as Router,
   Route,
-  Routes,
-  Navigate
+  Switch,
+  Redirect
 } from 'react-router-dom';
+
+
+
 
 class App extends Component {
   render() {
@@ -14,16 +18,19 @@ class App extends Component {
       <>
 
         <Router>
+          <div>
 
-          <Header />
+            <Header />
 
-          <Routes>
+            <Switch>
+              <Route exact path="/" />
 
 
 
-            < Navigate to="/" />
+              <Redirect to="/" />
 
-          </Routes>
+            </Switch>
+          </div>
         </Router>
       </>
     );

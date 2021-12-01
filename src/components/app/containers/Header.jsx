@@ -1,5 +1,5 @@
 import React from 'react';
-import HeaderDetail from '../HeaderDetail';
+import HeaderDetail from '../../HeaderDetail';
 
 const Header = () => {
 
