@@ -1,6 +1,7 @@
 
 import React, { Component } from 'react';
 import Header from '../app/containers/Header';
+import Menu from '../Menu';
 import {
   BrowserRouter as Router,
   Route,
@@ -22,8 +23,9 @@ class App extends Component {
 
             <Header />
 
+
             <Switch>
-              <Route exact path="/" />
+              <Route exact path="/" component={Menu} />
 
 
 
